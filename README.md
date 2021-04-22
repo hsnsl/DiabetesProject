@@ -11,3 +11,6 @@ Attention : You Should Provide License for Every Change in this file or descript
 This Code is Computed Depending Mobile Specifications 
 Need New Browser supports 
 Have Fun ! 
+
+
+#Navigate The Page : https://db.hsbo.repl.co  (Note : Turn On Inspect by Device and Select Mobile )
