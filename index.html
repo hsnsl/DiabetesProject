@@ -87,6 +87,10 @@
             </button>
         </center>
         <script>
+            var food = document.getElementById('food');
+            food.addEventListener('click',function(){
+              window.location.replace('foodar.html')
+            })
             localStorage.setItem("reads",localStorage.getItem("reads"));
             var reads=localStorage.getItem("reads");
             localStorage.getItem("break");
