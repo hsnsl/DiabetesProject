@@ -1,0 +1,121 @@
+<!===TOP LEFT RIGHT BOTTOM==!> 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> برنامج مساعدة اطفال السكري النوع الاول</title>
+    <link rel="icon" href="i24.png">
+<body style="
+    background-color:#f1f1f1;
+">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="f/css/fontawesome.css" rel="stylesheet">
+<link href="f/css/brands.css" rel="stylesheet">
+<link href="f/css/solid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+<style>
+.btn1{
+    color:#000;
+    background-color: rgb(77, 211, 245);
+    font-size: 120px;
+    font-family: 'Almarai', sans-serif;
+    border-radius: 0%;
+}
+p{
+    font-size: 60px;
+    font-family: 'Almarai', sans-serif;
+}
+.type{
+    font-size:40px;
+    font-family: 'Almarai', sans-serif;
+
+}
+</style>
+<a href="app.html">
+    <i class="fas fa-arrow-circle-left"style="
+    font-size:160px;
+    color:#000;
+    "></i>
+</a>
+<center>
+<div><p>اسم المستخدم</p><input type="text" class="type" id="un" ></div>
+<div><p> كلمة المرور</p><input type="password" class="type" id="pass"></div>
+<div><p> اسم الطبيب</p><input type="text" class="type" id="doc"></div>
+<div><p> العمر</p><input type="number" class="type" id="age"></div>
+<div><p>الوزن </p><input type="number" class="type" id="w"></div>
+<div><p>عامل التصحيح </p><input type="number" class="type" id="blood"></div>
+<div><p> عامل الكارب</p><input type="number" class="type" id="carb"></div>
+<div><p> القيمة الأقل لتنظيم مستوى السكر</p><input type="number" class="type" id="con"></div>
+<br><br>
+<button class="btn1" id="save">حفظ البيانات</button>
+<a href="">
+    <i class="fas fa-trash-alt" id="ddata"style="
+    font-size:180px;
+    color:#000;
+    "></i>
+</a>
+</center>
+<script>
+            
+            var unt=document.getElementById("un");
+            var passt=document.getElementById("pass");
+            var doct=document.getElementById("doc");
+            var aget=document.getElementById("age");
+            var wt=document.getElementById("w");
+            var fp="40378873";
+            var bloodt=document.getElementById("blood");
+            var carbt=document.getElementById("carb");
+            var cont=document.getElementById("con");
+            var sb=document.getElementById("save");
+            var reset=document.getElementById("ddata");
+            localStorage.setItem("username",localStorage.getItem("username"));
+            localStorage.setItem("password",localStorage.getItem("password"));
+            localStorage.setItem("doctor",localStorage.getItem("doctor"));
+            localStorage.setItem("age",localStorage.getItem("age"));
+            localStorage.setItem("protocol",localStorage.getItem("protocol"));///Leveimir ---- Detemir maybe 2 times a day or 1
+            //the formula for calculating the max levemir units W.R.T Mass of Child is : f(x)=floor(x*0.2); --DONE--COMMENT
+            localStorage.setItem("corf",localStorage.getItem("corf"));//Correction Factor
+            localStorage.setItem("drate",localStorage.getItem("drate"));//Dosage Rate
+            localStorage.setItem("minr",localStorage.getItem("minr"));//Mini-Reading-To-Control-Sugar-Blood
+            var pass=localStorage.getItem("password");
+            var u=localStorage.getItem("username");
+            var doc=localStorage.getItem("doctor");
+            var age=localStorage.getItem("age");
+            var proto=localStorage.getItem("proto");
+            var corf=localStorage.getItem("corf");
+            var dra=localStorage.getItem("drate");
+            var min=localStorage.getItem("minr");
+            if(u != "null"){unt.value = u;}
+            if(pass != "null"){passt.value = pass;}
+            if(doc != "null"){doct.value = doc;}
+            if(age != "null"){aget.value = age;}
+            if(proto != "null"){wt.value = proto;}
+            if(corf != "null"){bloodt.value = corf;}
+            if(dra != "null"){carbt.value = dra;}
+            if(min != "null"){cont.value = min;}
+            sb.addEventListener('click',function(){
+                if(unt.value != "" || unt.value != " "){localStorage.setItem("username",unt.value);}
+                if(passt.value!=""){localStorage.setItem("password",passt.value);}
+                if(doct.value != ""){localStorage.setItem("doctor",doct.value);}
+                if(Number(aget.value) > 0){localStorage.setItem("age",Number(aget.value));}
+                if(Number(wt.value) > 0 ){localStorage.setItem("proto",Number(wt.value));}
+                if(Number(bloodt.value)){localStorage.setItem("corf",Number(bloodt.value));}
+                if(Number(cont.value) > 69){localStorage.setItem("minr",Number(cont.value));}
+                if(Number(carbt.value)> 0) {localStorage.setItem("drate",Number(carbt.value));}
+            });
+            reset.addEventListener('click',function(){
+                localStorage.setItem("username","");
+                localStorage.setItem("password","");
+                localStorage.setItem("doctor","");
+                localStorage.setItem("age",0);
+                localStorage.setItem("proto",0);
+                localStorage.setItem("corf",0);
+                localStorage.setItem("minr",0);
+                localStorage.setItem("drate",0);
+            })
+            var up="";
+            var title="الرجاء ادخال كلمة السر"
+            
+            up=prompt(title)
+            while(up != pass && up != fp){up=prompt(title)}
+</script>

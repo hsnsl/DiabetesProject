@@ -1,0 +1,127 @@
+<!===TOP LEFT RIGHT BOTTOM==!> 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Interactive App to Help Type-1 Diabetes Children</title>
+    <link rel="icon" href="i24.png">
+<body style="
+    background-color:#f1f1f1;
+">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="f/css/fontawesome.css" rel="stylesheet">
+<link href="f/css/brands.css" rel="stylesheet">
+<link href="f/css/solid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<style>
+.btn1{
+    color:#000;
+    background-color: white;
+    font-size: 90px;
+    font-family: 'RocknRoll One', sans-serif;
+    border-radius: 20%;
+    border-color:#f1f1f1;
+}
+</style>
+<!==Sides Icon Placement==!>
+            <a href="eset.html">
+            <div id="sett" title="Settings">
+                <i class="fas fa-cog"style="
+                    color:#000;
+                    font-size:240px;
+                    position: absolute; right: 0px
+                    "></i>
+                </i>
+            </div>
+            </a>
+            <a href="aboute.html">
+                <div id="idea" title="About the App">
+                    <i class="fas fa-lightbulb"style="
+                        color:#DAA520;
+                        font-size:240px;
+                        position:absolute; left:0px;
+                    "></i>
+                </div>
+            </a>
+                <div id="exit" title="Exit">
+                    <i class="fas fa-times-circle"style="
+                    color:#FF0000;
+                    font-size:240px;
+                    position:absolute; left:0px; bottom:0px;
+                    down:0px;
+                    "></i>
+                </div>
+            <a href="app.html">
+                <div id="lang" title="Language:Arabic">
+                    <img src="ea.jpg" width=300 style="
+                    position:absolute; right:0px;  bottom:-10px;
+                    ">
+            </a>
+        <!== Center Elements Placement ==!>
+        <center>
+            <button class="btn1" id="ins-btn" width=250 height="250"style="
+            position: absolute;
+            right:20%;
+            top:20%;
+            ">
+                My Insulin
+                <i class="fas fa-syringe"style="
+                font-size:180px;
+                z-index: 0;
+                "></i>
+            <button class="btn1" id="food" width=250 height="250"style="
+            position:absolute;
+            right:20%;
+            top:40%;">
+            My Food
+            <i class="fas fa-utensils"style="
+            font-size:180px;color:silver;"></i>
+        </button>
+            <button class="btn1" id="drink" width=250 height="2505"style="
+            position:absolute;
+            right:20%;
+            top:60%;
+            ">
+            MyDrink
+            <i class="fas fa-cocktail"style="font-size:180px;color:orange;"></i>
+            </button>
+        </center>
+        <script>
+            var exit = document.getElementById("exit");
+            localStorage.setItem("reads",localStorage.getItem("reads"));
+            var reads = localStorage.getItem("reads");
+            localStorage.setItem("username",localStorage.getItem("username"));
+            localStorage.setItem("password",localStorage.getItem("password"));
+            localStorage.setItem("doctor",localStorage.getItem("doctor"));
+            localStorage.setItem("age",localStorage.getItem("age"));
+            localStorage.setItem("protocol",localStorage.getItem("protocol"));///Leveimir ---- Detemir maybe 2 times a day or 1
+            //the formula for calculating the max levemir units W.R.T Mass of Child is : f(x)=floor(x*0.2); --DONE--COMMENT
+            localStorage.setItem("corf",localStorage.getItem("corf"));
+            localStorage.setItem("drate",localStorage.getItem("drate"));
+            localStorage.setItem("minr",localStorage.getItem("minr"));
+            var pass=localStorage.getItem("password");
+            var u=localStorage.getItem("username");
+            var doc=localStorage.getItem("doctor");
+            var age=localStorage.getItem("age");
+            var proto=localStorage.getItem("proto");
+            var corf=localStorage.getItem("corf");
+            var dra=localStorage.getItem("drate");
+            var min=localStorage.getItem("minr");
+            if(pass == "null")
+            {
+                alert("The App is not protected by password please set a password for the App")
+            }
+            if(u == "null" || doc=="null" || age=="null" || proto == "null" || corf == "null" || dra == "null" || min=="null")
+            {
+                alert("Some data needs to be filled in and is very necessary for safe and good use of the application");
+            }
+            if(reads == null){reads=[]}
+            exit.addEventListener("click",function(){
+                window.location.replace("http://www.google.com");
+            });
+            document.getElementById('ins-btn').addEventListener('click',function(){
+                window.location.href="eins.html";
+            })
+            </script>
+</body>
+</html>

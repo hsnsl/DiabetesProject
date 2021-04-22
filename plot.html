@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>تقرير طفل السكري </title>
+      <link rel="icon" href="i24.png">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    </head>
+    <body style="
+    background-color:#f1f1f1;
+    font-family: 'Almarai', sans-serif;
+">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="f/css/fontawesome.css" rel="stylesheet">
+<link href="f/css/brands.css" rel="stylesheet">
+<link href="f/css/solid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+<style>
+.btn1{
+    color:#000;
+    background-color: white;
+    font-size: 120px;
+    font-family: 'Almarai', sans-serif;
+    border-radius: 20%;
+    border-color:#f1f1f1;
+}
+</style>
+        <a href="\"><a href="app.html">
+            <i class="fas fa-arrow-circle-left"style="
+            font-size:100px;
+            color:#000;
+            "></i>
+        </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+        <style rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></style>
+        <div class="container">
+        <canvas id="myChart"
+        width=500
+        ></canvas>
+    </div>
+        <center>
+            <h1 id="lbl" style="
+                font-size: 50px;
+            "> جاري التحليل</h1>
+            <div id="loader"></div>
+            <h1 id="des">
+
+            </h1>
+            <h1 id="av"></h1>
+    </center>
+    <style>
+#loader {
+  border: 16px solid #bdbaba; 
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+    <script src="plot.js"></script>
+        </body>
+        </html>

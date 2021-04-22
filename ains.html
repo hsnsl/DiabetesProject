@@ -1,0 +1,125 @@
+<!===TOP LEFT RIGHT BOTTOM==!> 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> برنامج مساعدة اطفال السكري النوع الاول</title>
+    <link rel="icon" href="i24.png">
+<body style="
+    background-color:#f1f1f1;
+    font-family: 'Almarai',sans-serif;
+">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="f/css/fontawesome.css" rel="stylesheet">
+<link href="f/css/brands.css" rel="stylesheet">
+<link href="f/css/solid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+<style>
+.btn1{
+    color:#000;
+    background-color: white;
+    font-size: 120px;
+    font-family: 'Almarai', sans-serif;
+    border-color:#f1f1f1;
+}
+</style>
+</head>
+<a href="\"><a href="app.html">
+    <i class="fas fa-arrow-circle-left"style="
+    font-size:180px;
+    color:#000;
+    "></i>
+</a>
+<center>
+    <h1 style="font-size:100px">الرجاء إدخال القراءة</h1>
+    <input type="Number" id="readt" style="font-size:80px"><br><br>
+    <button id="subr" class="btn1">ادخال القراءة</button>
+</center>
+
+<!==Advice Banner==!>
+
+<div id="dangban" width=200 height=100 style="
+background-color: #FF5555;
+font-size:40px;
+">
+<img src="warning.png" width=80 height=100 style=" position:absolute; right:10px;">
+<br>
+اقتراح : يفضل اخذ كوب ماء مع ملعقة صغيرة سكر
+</div>
+
+<div id="uno" width=200 height=100 style="background-color: #FF5555; font-size: 40px;">
+    <img src="warning.png" width=80 height=100 style=" position:absolute; right:10px;">
+    <br>
+    يفضل مراقبة السكر في الاوقات القادمة
+</div>
+
+<div id="good" width=200 height=100 style="
+background-color:#8DD53F ;
+font-size:40px;
+">
+<img src="excellence.png" width=80 height=100 style="position: absolute; right:10px;">
+<br>
+احسنت مستوى السكر في الدم لديك منتظم
+</div>
+
+<div id="bad" width=200 height=100 style="background-color: #FF5555; font-size: 40px;">
+<img src="warning.png" width=80 height=100 style="position: absolute; right:10px;">
+<br>
+اقتراح : يجب عليك مراجعة الطبيب
+</div>
+<h1 id="rapid"style="font-size:40px;"></h1>
+<center>
+<a href="plot.html">
+    <img src="report.png" width=256 height=256 title="تقرير">
+</a>
+</center>
+<script>
+    //banners
+    var bd = document.getElementById("dangban");
+    var bg = document.getElementById("good");
+    var bu = document.getElementById("bad");
+    var un = document.getElementById("uno");
+    //hide
+    bd.style.display="none";bg.style.display="none";bu.style.display="none";un.style.display="none";
+    ////////////////////////////////////////////////////////////////////////////////
+    var d=new Date();
+    var inst = document.getElementById('rapid');
+    var btn=document.getElementById('subr');
+    var tr=document.getElementById('readt');
+    localStorage.setItem("reads",localStorage.getItem("reads"));
+    var reads=localStorage.getItem("reads");
+    localStorage.setItem("times",localStorage.getItem("times"));
+    var times=localStorage.getItem("times");
+    btn.addEventListener('click',function()
+    {
+        var cd = d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear()+"|"+d.getHours()+":"+d.getMinutes();
+        if(localStorage.getItem("reads") == "null" || localStorage.getItem("reads") == "[]")
+        {
+            localStorage.setItem("reads",(Number(tr.value)));
+        }else{
+            localStorage.setItem("reads",localStorage.getItem("reads")+" "+Number(tr.value));
+        }
+        if(localStorage.getItem("times") == "null" || localStorage.getItem("times") == "[]" || localStorage.getItem("times") == "0")
+        {
+            localStorage.setItem("times",cd);
+        }else{
+            localStorage.setItem("times",localStorage.getItem("times")+" "+cd);
+        }
+        var x = Number(tr.value);
+        if(x <= 69){bd.style.display="block";bg.style.display="none";bu.style.display="none";un.style.display="none";}
+        if(x >= 70 && x <=80){bd.style.display="none";bg.style.display="none";bu.style.display="none";un.style.display="block";}
+        if(x >= 81 && x <= 200){bd.style.display="none";bg.style.display="block";bu.style.display="none";un.style.display="none";}
+        if(x > 200){bd.style.display="none";bg.style.display="none";bu.style.display="block";un.style.display="none";}
+        text="عدد وحدات الإنسولين المطلوبة:"
+        if(d.getHours() >= 18)
+        {
+            var ca=Math.floor((x-150)/70);
+            if(ca > 0){inst.innerText =text+ca;}else{inst.innerText="لا تحتاج إلى وحدات إنسولين"}
+        }else{
+            var ca2=Math.floor((x-120)/50);
+            if(ca2 > 0){inst.innerText =text+ca2;}else{inst.innerText="لا تحتاج إلى وحدات إنسولين"}
+        }
+    });
+</script>
+</body>
+</html>
