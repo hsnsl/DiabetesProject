@@ -87,42 +87,8 @@
             </button>
         </center>
         <script>
-            localStorage.setItem("reads",localStorage.getItem("reads"));
-            var reads=localStorage.getItem("reads");
-            localStorage.getItem("break");
-            localStorage.setItem("username",localStorage.getItem("username"));
-            localStorage.setItem("password",localStorage.getItem("password"));
-            localStorage.setItem("doctor",localStorage.getItem("doctor"));
-            localStorage.setItem("age",localStorage.getItem("age"));
-            localStorage.setItem("protocol",localStorage.getItem("protocol"));///Leveimir ---- Detemir maybe 2 times a day or 1
-            //the formula for calculating the max levemir units W.R.T Mass of Child is : f(x)=floor(x*0.2); --DONE--COMMENT
-            localStorage.setItem("corf",localStorage.getItem("corf"));//Correction Factor
-            localStorage.setItem("drate",localStorage.getItem("drate"));//Dosage Rate
-            localStorage.setItem("minr",localStorage.getItem("minr"));//Mini-Reading-To-Control-Sugar-Blood
-            var pass=localStorage.getItem("password");
-            var u=localStorage.getItem("username");
-            var doc=localStorage.getItem("doctor");
-            var age=localStorage.getItem("age");
-            var proto=localStorage.getItem("proto");
-            var corf=localStorage.getItem("corf");
-            var dra=localStorage.getItem("drate");
-            var min=localStorage.getItem("minr");
-            var exit = document.getElementById("exit");
-            if(pass == "null")
-            {
-                alert("التطبيق غير محمي بكلمة سر يجب عليك تغيير كلمة السر");
-            }
-            if(u == "null" || doc=="null" || age=="null" || proto == "null" || corf == "null" || dra == "null" || min=="null")
-            {
-                alert("بعض البيانات تحتاج إلى التعبئة و هي ضرورية جداً للإستخدام الآمن و الجيد للتطبيق")
-            }
-            if(reads == null){reads=[]}
-            exit.addEventListener("click",function(){
-                window.location.replace("http://www.google.com");
-            });
-            var ib=document.getElementById('ins-btn');
-            ib.addEventListener('click',function(){
-                window.location.replace('ains.html');
+        window.location.replace('index.html');
+place('ains.html');
             });
         </script>
         
