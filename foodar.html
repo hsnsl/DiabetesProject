@@ -14,6 +14,9 @@
 <link href="f/css/solid.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.8/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.8/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.8/dist/sweetalert2.min.css">
 <style>
 .btn1{
     color:#000;
@@ -31,11 +34,813 @@
     "></i>
 </a>
 <br><Br>
-
-<button class="btn1" id="c1" width=100 height="100"style="position: absolute;right:20%;top:20%;">
-  رز مطبوخ
-  <img src="1.jpg" width=400 height=240>
+<center>
+  <a href="readyfood.html"><h1 style="font-size:50px">تتوفر ميزة وجبات جاهزة يمكنك تجربتها الآن</h1></a>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+    كريمة طازجة 30% دسم
+    <img src="cream.jpg" width=400 height=240>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+    كريمة طازجة 40% دسم
+    <img src="cream.jpg" width=400 height=240>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+    كريمة طازجة قليل الدسم
+    <img src="cream.jpg" width=400 height=240>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+    كريمة طازجة كامل الدسم
+    <img src="cream.jpg" width=400 height=240>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(13);">
+    زبادي فواكه قليل الدسم
+    <img src="strawyougart.jpg" width=400 height=400>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
+    زبادي فواكه كامل الدسم
+    <img src="strawyougart.jpg" width=400 height=400>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
+    حليب مركز 10% دسم
+    <img src="masmilk.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(13);">
+    حليب مركز 4% دسم
+    <img src="masmilk.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+        حليب بقر قليل الدسم 1.5%دسم
+    <img src="cowmilk.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+        حليب بقر قليل الدسم 3.5%دسم
+    <img src="cowmilk.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(19);">
+    حلويات بالحليب
+    <img src="milkcake.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+    حليب ماعز
+    <br>
+    <img src="goatmilk.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+      حليب خام
+    <br>
+    <img src="nido.jpg" width=500 height=500>
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+    حليب بالزبدة
+    <br>
+    <img src="zibdamilk.png">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+    البيض
+    <br>
+    <img src="egg.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+    عجة البيض
+    <br>
+    <img src="ejaa-egg.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+    بيض مقلي
+    <br>
+    <img src="egg_mql.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
+    فول
+    <br>
+    <img src="fool.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(36);">
+    فاصولياء
+    <br>
+    <img src="beans.png">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(40);">
+    فاصولياء مجففة
+    <br>
+    <img src="nwb.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(11);">
+    بازيلاء خضراء
+    <br>
+    <img src="basela.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+    بازيلاء معلبة
+    <br>
+    <img src="baselam.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(41);">
+    عدس مجفف
+    <br>
+    <img src="adas.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(34);">
+    لوبيا العين السوداء
+    <br>
+    <img src="lobia.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت عباد الشمس
+    <br>
+    <img src="oilsunf.png">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+  زيت جوز الهند
+    <br>
+    <img src="oilco.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت يقطين
+    <br>
+    <img src="oilyaq.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت بذور الكتان
+    <br>
+    <img src="oilketan.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    مايونيز
+    <br>
+    <img src="mayo.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+    زبدة نصف دسم
+    <br>
+    <img src="zibda.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت زيتون
+    <br>
+    <img src="oilolive.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت سمسم
+    <br>
+    <img src="oilsem.png">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+    زيت دقيق القمح
+    <br>
+    <img src="oilqamh.jpg">
+  </button>
+  <br><br><br><br><br>
+  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+    فطر 
+  <br>
+  <img src="mashrom.jpg">
 </button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+فطر معلب  <br>
+  <img src="mashrome.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+ لحم مجفف  <br>
+  <img src="meatj.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+  شرائح لحم <br>
+  <img src="meatslices.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   رجل خروف<br>
+  <img src="sheepleg.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   صدر ضاني<br>
+  <img src="danised.jpg">
+</button>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   كبدة غنم<br>
+  <img src="kebdas.jpg">
+</button>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   لحمة كتف<br>
+  <img src="ketfm.jpeg">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   لحم عجل<br>
+  <img src="ejlm.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   ساق بقر<br>
+  <img src="saqc.png">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   لسان <br>
+  <img src="slsan.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   لحم ماعز<br>
+  <img src="maezm.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   دجاج<br>
+  <img src="chick.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   لحم أرنب<br>
+  <img src="rabit.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   حمام<br>
+  <img src="hamam.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   ديك رومي<br>
+  <img src="deekr.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   نقانق بقر<br>
+  <img src="naqanq.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   سلمون<br>
+  <img src="salmon.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   سردين<br>
+  <img src="sarden.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   تونا<br>
+  <img src="tona.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   سلمون مدخن<br>
+  <img src="salmonm.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   سردين بالزيت<br>
+  <img src="sardeeno.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   تونا بالزيت<br>
+  <img src="tunao.jpg">
+</button>
+<br><br><br><br><br>
+
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   المحار(البوق)<br>
+  <img src="mahar.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   الدنيس<br>
+  <img src="dane.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   الرنجة<br>
+  <img src="ringa.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   كلب البحر<br>
+  <img src="sdog.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   فليه سمك<br>
+  <img src="faleeh.jpg">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   الجمبري<br>
+  <img src="gambri.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   اسكمبلة<br>
+  <img src="escampla.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+  بلح البحر <br>
+  <img src="balahbahr.jpeg">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+  سمك موسى <br>
+  <img src="mosaf.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   سلطعون<br>
+  <img src="saltoon.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   البكلاي<br>
+  <img src="beq.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<!=====New ==== Class ====?!>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(23);">
+   بطاطس حلوة<br>
+  <img src="sbtata.jpg">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+   فاصولياء خضراء<br>
+  <img src="fasolg.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   بروكلي<br>
+  <img src="prokley.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+   خس<br>
+  <img src="khas.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   بصل أخضر<br>
+  <img src="basalg.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   خيار<br>
+  <img src="khear.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+   قرع<br>
+  <img src="qare.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+   جزر<br>
+  <img src="jazar.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   باميا<br>
+  <img src="bami.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(7);">
+   بقدونس<br>
+  <img src="baqdons.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   فجل<br>
+  <img src="fejel.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   ملفوف أحمر<br>
+  <img src="malfofr.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   بندورة<br>
+  <img src="tomato.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+   ملفوف أبيض<br>
+  <img src="malfofw.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
+   سلطة ملفوف<br>
+  <img src="malfofs.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
+   ذرة حلوة<br>
+  <img src="dora.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(20);">
+   ذرة حلوة معلبة<br>
+  <img src="doram.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+   بصل<br>
+  <img src="basal.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
+   بطاطا مسلوقة<br>
+  <img src="btatams.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(25);">
+   بطاطا مقلية<br>
+  <img src="batatamq.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
+   بطاطا مهروسة<br>
+  <img src="btatamh.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   خرشوف<br>
+  <img src="kharshoof.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   باذنجان<br>
+  <img src="batnjan.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   هندباء<br>
+  <img src="handba.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   جرادة<br>
+  <img src="jarada.png">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
+   فقوس<br>
+  <img src="faqoos.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(11);">
+   زنجبيل<br>
+  <img src="zanjbl.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+   ثوم خام<br>
+  <img src="toom.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+   كرنب<br>
+  <img src="kornb.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   فلفل حلو<br>
+  <img src="flflhlo.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   كراث<br>
+  <img src="krath.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   جرجير<br>
+  <img src="jarjer.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   هليون<br>
+  <img src="helion.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+   سبانخ<br>
+  <img src="sban.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+   ملفوف<br>
+  <img src="malfof.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   كوسا<br>
+  <img src="kosa.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+   رجلة<br>
+  <img src="rjla.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(2);">
+   زيتون أخضر<br>
+  <img src="oliveg.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+   زيتون أسود<br>
+  <img src="oliveb.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+   فطيرة تفاح <br>
+  <img src="appleb.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(46);">
+    كيك بالزبدة<br>
+  <img src="kekzibda.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(60);">
+   بسكويت بالزبدة<br>
+  <img src="bisczibda.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(82);">
+    كورن فليكس<br>
+  <img src="corn.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(23);">
+    مفتول مبخر<br>
+  <img src="maftoolm.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(77);">
+    مفتول بالسكر<br>
+  <img src="maftools.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(64);">
+    معجنات<br>
+  <img src="mojanat.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(45);">
+    كيك بالبندق<br>
+  <img src="cakebondq.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(41);">
+    بيتزا<br>
+  <img src="pizza.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(69);">
+   فشار <br>
+  <img src="cornf.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(75);">
+    دقيق الأرز<br>
+  <img src="daqroz.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(47);">
+    خبز ابيض<br>
+  <img src="wbread.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(50);">
+   كيك ليمون <br>
+  <img src="cakelem.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(37);">
+    خبز قمح<br>
+  <img src="bbread.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(40);">
+    قمح ردة<br>
+  <img src="radaqm.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(58);">
+    طحين ردة<br>
+  <img src="thenrda.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(60);">
+    قمح بدون قشرة<br>
+  <img src="noqmh.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(48);">
+    خبز التوست<br>
+  <img src="tost.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(60);">
+    طحين القمح<br>
+  <img src="theenqamh.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+    جنين قمح<br>
+  <img src="wgerm.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(46);">
+   خبز قمح ردة<br>
+  <img src="bqr.jfif">
+</button>
+<br><br><br><br><br>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(40);">
+   خبز توست أسود<br>
+  <img src="btost.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+    كاجو <br>
+  <img src="kasho.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(40);">
+     كستناء حلوة<br>
+  <img src="kastna.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(8);">
+     فول سوداني<br>
+  <img src="foolsod.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(9);">
+     فول سوداني محمص<br>
+  <img src="foolsodm.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(10);">
+     بندق<br>
+  <img src="bondq.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(4);">
+    جوز الهند <br>
+  <img src="jozhend.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
+    بذور اليقطين <br>
+  <img src="bzeryaqt.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(5);">
+    لوز حلو<br>
+  <img src="looz.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(20);">
+     صنوبر<br>
+  <img src="snobr.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(10);">
+     سمسم مجفف<br>
+  <img src="sesam.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
+    بذور عباد الشمس <br>
+  <img src="sfb.jfif">
+</button>
+<br><br><br><br><br>
+
+<button class="btn1" id="c1" width=100 height="100" onclick="view(10);">
+    جوز <br>
+  <img src="joz.jfif">
+</button>
+<br><br><br><br><br>
+
+
+<!=== NEW FRUITS ==!>
+<button class="btn1" id="c1" width=100 height="100" onclick="view(40);">
+     رمان<br>
+  <img src="btost.jfif">
+</button>
+<br><br><br><br><br>
+
+
+
+
+</center>
+<script>
+  function view(carb){
+    Swal.fire({
+      title:'',
+      icon: 'info',
+      html:'<h1 style="font-size:70px">معلومات  عن الصنف : كربوهيدرات لكل 100 جم : '+carb.toString()+'</h1>',
+      confirmButtonText: 'حسناً',
+      width:'800px',
+      height:'300px'
+    });
+  }
+    
+</script>
 
 </body>
 </head>
