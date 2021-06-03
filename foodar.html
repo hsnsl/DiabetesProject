@@ -9,6 +9,7 @@
     font-family: 'Almarai', sans-serif;
 ">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="f/css/fontawesome.css" rel="stylesheet">
 <link href="f/css/brands.css" rel="stylesheet">
 <link href="f/css/solid.css" rel="stylesheet">
@@ -27,7 +28,7 @@
     border-color:#f1f1f1;
 }
 </style>
-<a href="\"><a href="app.html">
+<a href="\"><a href="home.html">
     <i class="fas fa-arrow-circle-left"style="
     font-size:180px;
     color:#000;
@@ -36,7 +37,25 @@
 <br><Br>
 <center>
   <a href="readyfood.html"><h1 style="font-size:50px">تتوفر ميزة وجبات جاهزة يمكنك تجربتها الآن</h1></a>
-  <button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
+  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="ابحث هنا" title="Type in a category">
+
+<ul id="myMenu">
+  <li><a href="#cc1">منتجات الحليب</a></li>
+  <li><a href="#cc2">البيض</a></li>
+  <li><a href="#cc3">البقوليات</a></li>
+  <li><a href="#cc4">الزيوت</a></li>
+  <li><a href="#cc5">منتجات الفطر</a></li>
+  <li><a href="#cc6">اللحوم</a></li>
+  <li><a href="#cc7">الأسماك</a></li>
+  <li><a href="#cc8">الخضروات</a></li>
+  <li><a href="#cc9">منتجات الدقيق</a></li>
+  <li><a href="#cc10">المكسرات</a></li>
+  <li><a href="#cc11"> الفواكه</a></li>
+
+</ul>
+
+
+  <button class="btn1" id="cc1" width=100 height="100" onclick="view(3);">
     كريمة طازجة 30% دسم
     <img src="cream.jpg" width=400 height=240>
   </button>
@@ -109,7 +128,7 @@
     <img src="zibdamilk.png">
   </button>
   <br><br><br><br><br>
-  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+  <button class="btn1" id="cc2" width=100 height="100" onclick="view(1);">
     البيض
     <br>
     <img src="egg.jpg">
@@ -127,7 +146,7 @@
     <img src="egg_mql.jpg">
   </button>
   <br><br><br><br><br>
-  <button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
+  <button class="btn1" id="cc3" width=100 height="100" onclick="view(16);">
     فول
     <br>
     <img src="fool.jpg">
@@ -169,7 +188,7 @@
     <img src="lobia.jpg">
   </button>
   <br><br><br><br><br>
-  <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+  <button class="btn1" id="cc4" width=100 height="100" onclick="view(0);">
     زيت عباد الشمس
     <br>
     <img src="oilsunf.png">
@@ -223,7 +242,7 @@
     <img src="oilqamh.jpg">
   </button>
   <br><br><br><br><br>
-  <button class="btn1" id="c1" width=100 height="100" onclick="view(1);">
+  <button class="btn1" id="cc5" width=100 height="100" onclick="view(1);">
     فطر 
   <br>
   <img src="mashrom.jpg">
@@ -236,7 +255,7 @@
 </button>
 <br><br><br><br><br>
 
-<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+<button class="btn1" id="cc6" width=100 height="100" onclick="view(0);">
  لحم مجفف  <br>
   <img src="meatj.jpg">
 </button>
@@ -325,7 +344,7 @@
 </button>
 <br><br><br><br><br>
 
-<button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
+<button class="btn1" id="cc7" width=100 height="100" onclick="view(0);">
    سلمون<br>
   <img src="salmon.jpg">
 </button>
@@ -437,7 +456,7 @@
 
 
 <!=====New ==== Class ====?!>
-<button class="btn1" id="c1" width=100 height="100" onclick="view(23);">
+<button class="btn1" id="cc8" width=100 height="100" onclick="view(23);">
    بطاطس حلوة<br>
   <img src="sbtata.jpg">
 </button>
@@ -632,7 +651,7 @@
   <img src="oliveb.jfif">
 </button>
 <br><br><br><br><br>
-<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+<button class="btn1" id="cc9" width=100 height="100" onclick="view(30);">
    فطيرة تفاح <br>
   <img src="appleb.jfif">
 </button>
@@ -743,7 +762,7 @@
 </button>
 <br><br><br><br><br>
 
-<button class="btn1" id="c1" width=100 height="100" onclick="view(30);">
+<button class="btn1" id="cc10" width=100 height="100" onclick="view(30);">
     كاجو <br>
   <img src="kasho.jfif">
 </button>
@@ -818,181 +837,181 @@
 
 
 <!=== NEW FRUITS ======================================!>
-<button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
+<button class="btn1" id="cc11" width=100 height="100" onclick="view(16);">
      رمان<br>
-  <img src="btost.jfif">
+  <img src="roman.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(13);">
      أناناس<br>
-  <img src="btost.jfif">
+  <img src="anans.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
      أناناس معلب<br>
-  <img src="btost.jfif">
+  <img src="anansm.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(11);">
      تفاح<br>
-  <img src="btost.jfif">
+  <img src="tfah.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(55);">
      تفاح مجفف<br>
-  <img src="btost.jfif">
+  <img src="tfahm.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(8);">
      برنقال<br>
-  <img src="btost.jfif">
+  <img src="orange.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(8);">
      مشمش<br>
-  <img src="btost.jfif">
+  <img src="mshmsh.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(48);">
      مشمش مجفف<br>
-  <img src="btost.jfif">
+  <img src="mshmshm.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(15);">
      مشمش معلب<br>
-  <img src="btost.jfif">
+  <img src="mshmsha.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(0);">
      أفوكادو<br>
-  <img src="btost.jfif">
+  <img src="avo.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(20);">
      موز<br>
-  <img src="btost.jfif">
+  <img src="moz.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(75);">
      موز مجفف<br>
-  <img src="btost.jfif">
+  <img src="mozm.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
      أجاص<br>
-  <img src="btost.jfif">
+  <img src="jas.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
      أجاص معلب<br>
-  <img src="btost.jfif">
+  <img src="jasm.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
      توت بري أسود<br>
-  <img src="btost.jfif">
+  <img src="totb.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(65);">
      تمر مجفف<br>
-  <img src="btost.jfif">
+  <img src="dateb.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
      فراولة<br>
-  <img src="btost.jfif">
+  <img src="frawla.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
      فراولة مجمد<br>
-  <img src="btost.jfif">
+  <img src="frawlam.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
      تين <br>
-  <img src="btost.jfif">
+  <img src="teen.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(55);">
      تين مجفف<br>
-  <img src="btost.jfif">
+  <img src="teenm.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(7);">
      كرفوت<br>
-  <img src="btost.jfif">
+  <img src="krfot.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
      جوافة<br>
-  <img src="btost.jfif">
+  <img src="java.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
      كرز أسود<br>
-  <img src="btost.jfif">
+  <img src="karazb.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
      شمام حلو<br>
-  <img src="btost.jfif">
+  <img src="shmam.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(8);">
      برقوق<br>
-  <img src="btost.jfif">
+  <img src="barqoq.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
      كاكا<br>
-  <img src="btost.jfif">
+  <img src="kaka.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(9);">
      كيوي<br>
-  <img src="btost.jfif">
+  <img src="kiwi.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(10);">
      كلمنتينة يوسفي<br>
-  <img src="btost.jfif">
+  <img src="klmnt.jfif">
 </button>
 <br><br><br><br><br>
 
@@ -1000,85 +1019,85 @@
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(12);">
      مانجا<br>
-  <img src="btost.jfif">
+  <img src="manga.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(14);">
     برقوق أصفر <br>
-  <img src="btost.jfif">
+  <img src="barqoqy.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(9);">
      فلورة <br>
-  <img src="btost.jfif">
+  <img src="flora.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(6);">
     توت بري أحمر <br>
-  <img src="btost.jfif">
+  <img src="tbr.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(7);">
     سفرجل <br>
-  <img src="btost.jfif">
+  <img src="svrjl.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(13);">
      برقوق أخضر<br>
-  <img src="btost.jfif">
+  <img src="barqoqg.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(8);">
      بطيخ<br>
-  <img src="btost.jfif">
+  <img src="melon.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(16);">
      عنب<br>
-  <img src="btost.jfif">
+  <img src="gra.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(65);">
      عنب مجفف<br>
-  <img src="btost.jfif">
+  <img src="gram.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(3);">
      ليمون<br>
-  <img src="btost.jfif">
+  <img src="lemon.jfif">
 </button>
 <br><br><br><br><br>
 
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(9);">
      خوخ<br>
-  <img src="btost.jfif">
+  <img src="kho.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(52);">
      خوخ مجفف<br>
-  <img src="btost.jfif">
+  <img src="khom.jfif">
 </button>
 <br><br><br><br><br>
 
 <button class="btn1" id="c1" width=100 height="100" onclick="view(14);">
      خوخ معلب<br>
-  <img src="btost.jfif">
+  <img src="khoa.jfif">
 </button>
 <br><br><br><br><br>
 
@@ -1095,9 +1114,236 @@
       height:'300px'
     });
   }
-    
-</script>
+  function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
 
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+function setup(){
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    li[i].style.display = "none";
+  }   
+}
+setup2();
+//handling click anywhere on the screen
+document.body.addEventListener("click",function(){setup();});
+</script>
+<style>
+  #mySearch {
+  width: 100%;
+  font-size: 58px;
+  padding: 11px;
+  border: 1px solid #000;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  font-size: 58px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  font-size: 58px;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+   border: 1px solid #000;
+}
+
+#myMenu li a:hover {
+  font-size: 58px;
+  background-color: #eee;
+}
+/* General button style */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #2980b9;
+}
+
+.btn-1:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-1:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 2 */
+.btn-2 {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.btn-2:hover {
+  background: #27ae60;
+}
+
+.btn-2:active {
+  background: #27ae60;
+  top: 2px;
+}
+
+.btn-2:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 3 */
+.btn-3 {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-3:hover {
+  background: #c0392b;
+}
+
+.btn-3:active {
+  background: #c0392b;
+  top: 2px;
+}
+
+.btn-3:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 3 */
+.btn-4 {
+  background: #34495e;
+  color: #fff;
+}
+
+.btn-4:hover {
+  background: #2c3e50;
+}
+
+.btn-4:active {
+  background: #2c3e50;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Icons */
+
+.icon-cart:before {
+  content: "\f07a";
+}
+
+.icon-heart:before {
+  content: "\f55a";
+}
+
+.icon-info:before {
+  content: "\f05a";
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+</style>
 </body>
 </head>
 </html>

@@ -31,7 +31,7 @@ p{
 
 }
 </style>
-<a href="app.html">
+<a href="home.html">
     <i class="fas fa-arrow-circle-left"style="
     font-size:160px;
     color:#000;
@@ -115,7 +115,8 @@ p{
             })
             var up="";
             var title="الرجاء ادخال كلمة السر"
-            
-            up=prompt(title)
-            while(up != pass && up != fp){up=prompt(title)}
+            if(pass != null){
+              up=prompt(title)
+              while(up != pass && up != fp){up=prompt(title)}
+            }
 </script>
