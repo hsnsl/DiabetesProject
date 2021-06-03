@@ -1104,16 +1104,43 @@
 
 </center>
 <script>
+      //using cache;
+            localStorage.setItem("username",localStorage.getItem("username"));
+            localStorage.setItem("password",localStorage.getItem("password"));
+            localStorage.setItem("doctor",localStorage.getItem("doctor"));
+            localStorage.setItem("age",localStorage.getItem("age"));
+            localStorage.setItem("protocol",localStorage.getItem("protocol"));///Leveimir ---- Detemir maybe 2 times a day or 1
+            //the formula for calculating the max levemir units W.R.T Mass of Child is : f(x)=floor(x*0.2); --DONE--COMMENT
+            localStorage.setItem("corf",localStorage.getItem("corf"));//Correction Factor
+            localStorage.setItem("drate",localStorage.getItem("drate"));//Dosage Rate
+            localStorage.setItem("minr",localStorage.getItem("minr"));//Mini-Reading-To-Control-Sugar-Blood
+            var pass=localStorage.getItem("password");
+            var u=localStorage.getItem("username");
+            var doc=localStorage.getItem("doctor");
+            var age=localStorage.getItem("age");
+            var proto=localStorage.getItem("proto");
+            var corf=localStorage.getItem("corf");
+            var dra=localStorage.getItem("drate");
+            var min=localStorage.getItem("minr");
+
+
+
+
+            ///// 
+
   function view(carb){
+    carbc=Math.floor(carb/dra);
     Swal.fire({
       title:'',
       icon: 'info',
-      html:'<h1 style="font-size:70px">معلومات  عن الصنف : كربوهيدرات لكل 100 جم : '+carb.toString()+'</h1>',
+      html:'<h1 style="font-size:70px">معلومات  عن الصنف : كربوهيدرات لكل 100 جم : '+carb.toString()+'تحتاج من   الوحدات ما قدره:  '+carbc.toString()+'</h1>',
       confirmButtonText: 'حسناً',
       width:'800px',
       height:'300px'
     });
   }
+
+  
   function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i;

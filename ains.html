@@ -24,7 +24,7 @@
 }
 </style>
 </head>
-<a href="\"><a href="app.html">
+<a href="\"><a href="home.html">
     <i class="fas fa-arrow-circle-left"style="
     font-size:180px;
     color:#000;
@@ -74,6 +74,24 @@ font-size:40px;
 </a>
 </center>
 <script>
+    //using cache;
+            localStorage.setItem("username",localStorage.getItem("username"));
+            localStorage.setItem("password",localStorage.getItem("password"));
+            localStorage.setItem("doctor",localStorage.getItem("doctor"));
+            localStorage.setItem("age",localStorage.getItem("age"));
+            localStorage.setItem("protocol",localStorage.getItem("protocol"));///Leveimir ---- Detemir maybe 2 times a day or 1
+            //the formula for calculating the max levemir units W.R.T Mass of Child is : f(x)=floor(x*0.2); --DONE--COMMENT
+            localStorage.setItem("corf",localStorage.getItem("corf"));//Correction Factor
+            localStorage.setItem("drate",localStorage.getItem("drate"));//Dosage Rate
+            localStorage.setItem("minr",localStorage.getItem("minr"));//Mini-Reading-To-Control-Sugar-Blood
+            var pass=localStorage.getItem("password");
+            var u=localStorage.getItem("username");
+            var doc=localStorage.getItem("doctor");
+            var age=localStorage.getItem("age");
+            var proto=localStorage.getItem("proto");
+            var corf=localStorage.getItem("corf");
+            var dra=localStorage.getItem("drate");
+            var min=localStorage.getItem("minr");
     //banners
     var bd = document.getElementById("dangban");
     var bg = document.getElementById("good");
@@ -113,10 +131,10 @@ font-size:40px;
         text="عدد وحدات الإنسولين المطلوبة:"
         if(d.getHours() >= 18)
         {
-            var ca=Math.floor((x-150)/70);
+            var ca=Math.floor((x-(min+20))/(corf+20));
             if(ca > 0){inst.innerText =text+ca;}else{inst.innerText="لا تحتاج إلى وحدات إنسولين"}
         }else{
-            var ca2=Math.floor((x-120)/50);
+            var ca2=Math.floor((x-min)/corf);
             if(ca2 > 0){inst.innerText =text+ca2;}else{inst.innerText="لا تحتاج إلى وحدات إنسولين"}
         }
     });
