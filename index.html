@@ -9,31 +9,46 @@
 </head>
 <body>
   <center>
-  <div class="splash">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
-      <img src="https://dblog.hsbo.repl.co/images/logo.svg" width=200>
-  </div>
-  <h1>تطبيق مرضى السكري فلسطين</h1>
+    <img src="https://db.hsbo.repl.co/i.png" width=150 height=150>
+    <h1 style="font-size:35px">مساعدي لتنظيم السكر</h1>
+    <h3 style="font-size:20px">
+      
+      هذا البرنامج مخصص لمساعدة
+            <img src="https://image.flaticon.com/icons/png/512/545/545680.png" width=30 height=30>
+    </h3>
+    <h3 style="font-size:20px"> المرضى الذين تم تشخيصهم </h3>
+    <h3 style="font-size:20px">بالسكري النوع الأول بوجه   عام</h3>
+    <h3 style="font-size:20px"> ولفئة الأطفال بوجه خاص </h3>
+    </h3>
+    <h3 style="font-size:20px">/حقوق الملكية خاصة ب
+                 <img src="https://image.flaticon.com/icons/png/512/545/545680.png" width=30 height=30>
+    </h3>
+    <h3 style="font-size:20px">حسن إسماعيل صالح -غزة،فلسطين</h3>
+    <h3 style="font-size:20px">
+       للتواصل:على البريد الإلكتروني
+                        <img src="https://image.flaticon.com/icons/png/512/545/545680.png" width=30 height=30>
+    </h3>
+    <h3 style="font-size:20px">
+      hasan.ismail.saleh@gmail.com
+    </h3>
+    <button class="btn1" style="font-size:40px" id="cont">استمرار</button>
   </center>
 </body>
 <style>
   body{
     font-family:'Almarai','sans-serif';
   }
-  .splash{
-    animation:view ease-in-out 1.2s infinite;
-
-  }
-  @keyframes view{
-    from{opacity:0}
-    to{opacity:1}
-  }
+  .btn1{
+    color:#000;
+    background-color: white;
+    font-size: 120px;
+    font-family: 'Almarai', sans-serif;
+    border-color:#f1f1f1;
+}
   </style>
   <script>
-    a=setInterval(function(){
-      window.location.href="home.html";
-      clearInterval(a);
-    },5000);
+    document.getElementById('cont').addEventListener('click',function(){
+      window.location.href="uses.html";
+    });
     </script>
 </html>

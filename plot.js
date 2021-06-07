@@ -43,7 +43,7 @@ function pro(){
     {
         sum+=Number(ar[i]);
     }
-    sum = sum/(ar.length);
+    sum = sum/(ar.length-1);
     if(!ar){d.innerText="للأسف لا يوجد لديك قراءات يمكنك التسجيل الآن";}
     if(sum < 70){d.innerText="مستوى السكر في الدم شبه منخفض يفضل  السيطرة عليه أكثر"}
     if(sum >= 70 && sum <= 170){d.innerText="مستوى السكر في الدم تحت السيطرة"}
@@ -51,6 +51,10 @@ function pro(){
     if(sum >= 251){d.innerText="مستوى السكر في الدم غير مناسب عليك مراجعة الطبيب"}
     av.innerText="المتوسط:"+Math.floor(sum);
     clearInterval(myVar);
+    hac=(46.7 + sum) / 28.7
+    hac=hac.toFixed(1)
+    var a1c= document.getElementById('a1c');
+    a1c.innerText="المخزون المتوقع:"+hac;
 }
 function f() {
     myVar = setInterval(function(){pro();},5000);

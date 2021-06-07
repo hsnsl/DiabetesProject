@@ -8,7 +8,6 @@
     background-color:#f1f1f1;
     font-family: 'Almarai',sans-serif;
 ">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link href="f/css/fontawesome.css" rel="stylesheet">
 <link href="f/css/brands.css" rel="stylesheet">
 <link href="f/css/solid.css" rel="stylesheet">
@@ -31,9 +30,10 @@
     "></i>
 </a>
 <center>
-    <h1 style="font-size:100px">الرجاء إدخال القراءة</h1>
+    <h1 style="font-size:90px">الرجاء إدخال القراءة</h1>
     <input type="Number" id="readt" style="font-size:80px"><br><br>
-    <button id="subr" class="btn1">ادخال القراءة</button>
+    <button id="subr" class="btn1" style="font-size:80px">
+      ايجاد عدد الوحدات المطلوبة</button>
 </center>
 
 <!==Advice Banner==!>
@@ -42,9 +42,11 @@
 background-color: #FF5555;
 font-size:40px;
 ">
-<img src="warning.png" width=80 height=100 style=" position:absolute; right:10px;">
-<br>
+<center>
+<h1 style="color:white;font-size:40px;">
 اقتراح : يفضل اخذ كوب ماء مع ملعقة صغيرة سكر
+</h1>
+</center>
 </div>
 
 <div id="uno" width=200 height=100 style="background-color: #FF5555; font-size: 40px;">
@@ -57,9 +59,9 @@ font-size:40px;
 background-color:#8DD53F ;
 font-size:40px;
 ">
-<img src="excellence.png" width=80 height=100 style="position: absolute; right:10px;">
-<br>
+<h1 style="font-size:40px;">
 احسنت مستوى السكر في الدم لديك منتظم
+</h1>
 </div>
 
 <div id="bad" width=200 height=100 style="background-color: #FF5555; font-size: 40px;">
@@ -70,6 +72,9 @@ font-size:40px;
 <h1 id="rapid"style="font-size:40px;"></h1>
 <center>
 <a href="plot.html">
+  <h1 style="font-size:50px">
+    لفحص مخزون السكر المتوقع من هنا
+  </h1>
     <img src="report.png" width=256 height=256 title="تقرير">
 </a>
 </center>
@@ -131,7 +136,7 @@ font-size:40px;
         text="عدد وحدات الإنسولين المطلوبة:"
         if(d.getHours() >= 18)
         {
-            var ca=Math.floor((x-(min+20))/(corf+20));
+            var ca=Math.floor((x-(min+30))/(corf+20));
             if(ca > 0){inst.innerText =text+ca;}else{inst.innerText="لا تحتاج إلى وحدات إنسولين"}
         }else{
             var ca2=Math.floor((x-min)/corf);

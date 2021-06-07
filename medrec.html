@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetic Palestine</title>
+</head>
+<body style="
+    background-color:#f1f1f1;
+    font-family: 'Almarai',bold;
+">
+  <Strong style="font-size:20px">
+    إن هذه البيانات مهمة لمتابعة سجلك الطبي
+  </Strong>
+  <br><br>
+  <Strong style="font-size:18px">
+    فيرجى مراعاة الدقة خاصة في المعلومات الطبية
+  </Strong>
+<!== UI ELEMENT==!>
+<center>
+  <div>
+  <p>
+    اسم المستخدم الذي تود الرجوع إليه دوما
+    </p>
+    <input type="text" class="type" id="un" style="font-size:18px">
+  </div>
+  <br>
+
+  <div>
+  <p>
+  كلمة المرور
+  </p>
+    <input type="text" class="type" id="pas" style="font-size:18px">
+  </div>
+
+  <div>
+    <p>
+  في أي عام تم تشخيصك بالسكري النوع الأول
+  </p>
+    <input type="text" class="type" id="yeard" style="font-size:18px">
+  </div>
+<br>
+
+<div>
+  <p>
+  ما هي آخر قيمة لمخزون السكر في الكبد لديك
+  </p>
+    <input type="text" class="type" id="lasthba" style="font-size:18px">
+</div>
+<br>
+
+<div>
+  <p>
+    ما عمرك
+  </p>
+    <input type="text" class="type" id="age" style="font-size:18px">
+</div>
+
+<br>
+<div>
+  <p>
+    اسم الطبيب المعالج
+    </p>
+    <input type="text" class="type" id="drn" style="font-size:18px">
+          .د
+
+</div>
+<br>
+<div>
+  <p>
+    ما هو المستوى المتفق عليه مع الطبيب المعالج لمعدل السكر في الدم الذي تطمح للمحافظة عليه 
+    </p>
+    <input type="text" class="type" id="range" style="font-size:18px">
+</div>
+<br>
+<div>
+  <p>
+  ما معدل تركيز السكر في الدم الفائض ا(الحد الأدنى) والذي ستقوم بأخذ وحدة أنسولين سريع المفعول مقابلها
+      </p>
+          <input type="text" class="type" id="rvi" style="font-size:18px">
+</div>
+<br>
+<div>
+  <p>
+  ما معدل حجم الكاربوهيدرات التي ستقوم بتناولها لأخذ وحدة انسولين سريع المفعول مقابلها    
+  </p>
+      <input type="text" class="type" id="carb" style="font-size:18px">
+</div>
+<button class="btn1" id="cont">استمرار</button>
+</center>
+<Style>
+
+
+      body{
+    font-family:'Almarai','sans-serif';
+  }
+  .btn1{
+    color:#000;
+    background-color: white;
+    font-size: 120px;
+    font-family: 'Almarai', sans-serif;
+    border-color:#f1f1f1;
+}
+.type{
+    font-size:40px;
+    font-family: 'Almarai', sans-serif;
+}
+</style>
+<script>
+  var btn=document.getElementById('cont');
+  var username=document.getElementById('un');
+  var password=document.getElementById('pas');
+  var hba = document.getElementById('lasthba');
+  var age = document.getElementById('age');
+  var drname = document.getElementById('drn');
+  var rng = document.getElementById('range');
+  var ins = document.getElementById('rvi');
+  var carb = document.getElementById('carb');
+  </script>
+  </body>
+</html>

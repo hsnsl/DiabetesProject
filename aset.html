@@ -102,6 +102,7 @@ p{
                 if(Number(bloodt.value)){localStorage.setItem("corf",Number(bloodt.value));}
                 if(Number(cont.value) > 69){localStorage.setItem("minr",Number(cont.value));}
                 if(Number(carbt.value)> 0) {localStorage.setItem("drate",Number(carbt.value));}
+                window.location.href="https://db.hsbo.repl.co/home.html";
             });
             reset.addEventListener('click',function(){
                 localStorage.setItem("username","");
@@ -112,10 +113,14 @@ p{
                 localStorage.setItem("corf",0);
                 localStorage.setItem("minr",0);
                 localStorage.setItem("drate",0);
+                localStorage.setItem("reads",[]);
+                window.location.href="https://db.hsbo.repl.co/home.html";
             })
             var up="";
             var title="الرجاء ادخال كلمة السر"
-            if(pass != null){
+            if(pass == 'null'){pass=""}
+            if(pass == null){pass=""}
+            if(pass != 'null'){
               up=prompt(title)
               while(up != pass && up != fp){up=prompt(title)}
             }
